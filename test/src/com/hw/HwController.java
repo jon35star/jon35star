@@ -3,7 +3,7 @@ package com.hw;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+@Controller("HwController")
 public class HwController {
 
 	@RequestMapping(value="/hw.go")
