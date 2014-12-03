@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapper namespace="web-inf.webmapper.boardmapper">
+
+	<insert id="insertBoard" parameterType="String">
+	
+		insert board(title,username,content) into values {#title}, {#username}, {#content}
+	
+	
+	</insert>
+</mapper>

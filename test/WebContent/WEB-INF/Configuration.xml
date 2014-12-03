@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<configuration>
+	
+
+	<typeAlias type="com.board.Board" alias="Board" />
+	
+
+
+	<mappers>
+		<mapper resource="web-inf/mapper/boardMapper.xml" />
+	</mappers>
+
+</configuration>

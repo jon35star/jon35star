@@ -29,7 +29,7 @@
 
         <property name="typeAliasesPackage" value="com.board" />
 
-        <property name="mapperLocations" value="classpath:com/test/mybatis/*.xml" />
+        <property name="mapperLocations" value="web-inf/mapper/*Mapper.xml" />
 
     </bean>
 
@@ -41,10 +41,5 @@
 
     </bean>
 
-  
- 
-  
-  
-  
   
 </beans>
