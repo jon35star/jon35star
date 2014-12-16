@@ -4,7 +4,7 @@
 <configuration>
 	
 	<mappers>
-		<mapper resource="web-inf/mapper/boardMapper.xml" />
+		<mapper resource="/web-inf/mybatis/mapper/boardMapper.xml" />
 	</mappers>
 
 </configuration>

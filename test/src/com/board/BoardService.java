@@ -3,9 +3,11 @@ package com.board;
 import java.util.ArrayList;
 
 public interface BoardService {
-
-	public ArrayList<Board> allBoard(String title, String username, String content);
 	
+	//리스트
+	public ArrayList<Board> boardList(String title, String username, String content);
+	
+	//추가
 	public int insert(Board board);
 	
 }

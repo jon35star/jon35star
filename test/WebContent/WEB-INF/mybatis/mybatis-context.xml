@@ -29,7 +29,7 @@
 
         <property name="typeAliasesPackage" value="com.board" />
 
-        <property name="mapperLocations" value="web-inf/mapper/*Mapper.xml" />
+        <property name="mapperLocations" value="/web-inf/mapper/*Mapper.xml" />
 
     </bean>
 
