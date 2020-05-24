@@ -53,7 +53,7 @@ public class LoginController {
 	/**
 	 * Simply selects the admin list view to render by returning its name.
 	 */
-	@RequestMapping(value = "/list", method = RequestMethod.POST)
+	@RequestMapping(value = "/admin/list", method = RequestMethod.POST)
 	public String list(Locale locale, Model model) {
 
 		return "admin/list";

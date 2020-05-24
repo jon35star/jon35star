@@ -37,6 +37,16 @@
 
 </style>
 
+<script type="text/javascript">
+
+$('#log-in-button').onclick(function(){
+	$('#actionForm').attr('action','/admin/list');
+	$('#actionForm').attr('method','POST');
+	$('#actionForm').submit();
+});
+
+</script>
+
 <body>
 
 
@@ -49,10 +59,10 @@
 
       <!--login form-->
       <div class="box">
-        <form>
+        <form id="actionForm" name="actionForm">
           <div class="field">
             <p class="control has-icons-left">
-              <input class="input" type="id" placeholder="id">
+              <input class="input" type="id" name="id" placeholder="id">
               <span class="icon is-small is-left">
                 <i class="fa fa-lock"></i>
               </span>
@@ -60,7 +70,7 @@
           </div>
           <div class="field">
             <p class="control has-icons-left">
-              <input class="input" type="password" placeholder="Password">
+              <input class="input" type="password" name="password" placeholder="Password">
               <span class="icon is-small is-left">
                 <i class="fa fa-lock"></i>
               </span>
