@@ -1,5 +1,6 @@
 package com.admin.login;
 
+import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -15,16 +16,24 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application admin page.
  */
 @Controller
-public class AdminController {
+public class LoginController {
 
-	private static final Logger logger = LoggerFactory.getLogger(AdminController.class);
+	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
 	/**
 	 * Simply selects the admin main view to render by returning its name.
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String main(Locale locale, Model model) {
+	@RequestMapping(value = "/admin/", method = RequestMethod.GET)
+	public String adminmain(Locale locale, Model model) {
 		logger.info("Welcome admin! The client locale is {}.", locale);
+		String aa = "1";
+		int bb = 1;
+		BigDecimal cc = new BigDecimal("1");
+		BigDecimal dd = BigDecimal.TEN;
+		
+		logger.info("aa="+aa);
+		logger.info("cc="+cc);
+		
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -32,6 +41,9 @@ public class AdminController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
+		
+		model.addAttribute("aa", aa);
+		
 		
 		return "admin/main";
 	}
