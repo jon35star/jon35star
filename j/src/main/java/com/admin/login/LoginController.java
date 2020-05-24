@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * Handles requests for the application admin page.
+ * Handles requests for the application login page.
  */
 @Controller
 public class LoginController {
@@ -24,8 +24,8 @@ public class LoginController {
 	 * Simply selects the admin main view to render by returning its name.
 	 */
 	@RequestMapping(value = "/admin/", method = RequestMethod.GET)
-	public String adminmain(Locale locale, Model model) {
-		logger.info("Welcome admin! The client locale is {}.", locale);
+	public String login(Locale locale, Model model) {
+		logger.info("Welcome admin login!");
 		String aa = "1";
 		int bb = 1;
 		BigDecimal cc = new BigDecimal("1");
@@ -43,6 +43,8 @@ public class LoginController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		model.addAttribute("aa", aa);
+		model.addAttribute("bb", bb);
+		model.addAttribute("cc", cc);
 		
 		
 		return "admin/main";

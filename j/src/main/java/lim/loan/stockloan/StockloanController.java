@@ -24,7 +24,7 @@ public class StockloanController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String main(Locale locale, Model model) {
-		logger.info("Welcome stockloan main! The client locale is {}.", locale);
+		logger.info("Welcome main!");
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
